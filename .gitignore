@@ -1,0 +1,14 @@
+/.idea
+/.idea_modules
+/.classpath
+/.project
+project/target
+project/project
+*.ipr
+/*.iml
+target
+dist
+tmp
+.history
+log
+/.settings
