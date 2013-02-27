@@ -5,6 +5,9 @@ import collection.mutable.ListBuffer
 
 class MySplitter{
 
-  def splitBody(body: String): java.util.List[String] = ListBuffer(body.split(" "): _*)
+  def splitBody(body: String): java.util.List[String] = {
+    println(body.size)
+    ListBuffer(body)
+  }
 }
  

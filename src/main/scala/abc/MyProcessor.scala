@@ -6,6 +6,7 @@ class MyProcessor extends Processor{
   def process(exchange: Exchange) {
     val in: Message = exchange.getIn()
     val body: AnyRef = in.getBody()
-    in.setBody(body+", I am so awesome")
+    println("#"*80)
+    in.setBody(body+", I am so awesome"+(System.currentTimeMillis / 1000))
   }
 }

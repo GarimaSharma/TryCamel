@@ -8,6 +8,7 @@ object Blah extends App {
   context.bind("mySplitter", new MySplitter())
   val c = new DefaultCamelContext(context)
   c.addRoutes(new Trying)
+
   c.start()
   while (true) {}
 }
